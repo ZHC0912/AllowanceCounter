@@ -1,0 +1,8 @@
+# Database — never commit this
+*.db
+*.sqlite
+*.sqlite3
+__pycache__/
+*.pyc
+build/
+dist/
