@@ -1,10 +1,16 @@
 """constants.py — Shared constants, theme colours, and theme management."""
 
 import os
+import sys
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
 
-DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'allowance.db')
+if getattr(sys, 'frozen', False):
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+DB_PATH = os.path.join(BASE_DIR, 'allowance.db')
 
 MONTHS = [
     'January', 'February', 'March', 'April', 'May', 'June',
