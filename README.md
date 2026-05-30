@@ -32,7 +32,7 @@ main.py
 ## Running
 
 ```bash
-pip install matplotlib tkcalendar   # optional but recommended
+pip install matplotlib tkcalendar   # optional
 python main.py
 ```
 
